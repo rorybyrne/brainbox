@@ -26,7 +26,7 @@ export default function IndexPage(props) {
 	return (
 		<Layout>
 			{/* siteTitle specifies that the title will the siteTitle alone */}
-			<SEO title="siteTitle" />
+			<SEO title="Rory's Brain Box" />
 			<Intro
 				siteTitle={site.siteMetadata.title}
 				siteDescription={site.siteMetadata.description}

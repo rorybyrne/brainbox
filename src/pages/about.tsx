@@ -6,7 +6,7 @@ export default function About(props) {
 	return (
 		<Layout>
 			{/* siteTitle specifies that the title will the siteTitle alone */}
-			<SEO title="siteTitle" />
+			<SEO title="About" />
 			<section className="About">
 				<h1>About</h1>
 				<p>

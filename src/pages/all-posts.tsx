@@ -1,10 +1,8 @@
 import React from "react"
-import { Link } from "gatsby"
-import { useStaticQuery, graphql } from "gatsby"
+import {graphql, useStaticQuery} from "gatsby"
 
 import Layout from "../components/Layout/layout"
 import SEO from "../components/Utils/seo"
-import Intro from "../components/Intro/intro"
 import Posts from "../components/Posts/posts"
 
 export default function PostsPage(props) {
@@ -25,7 +23,7 @@ export default function PostsPage(props) {
 	return (
 		<Layout>
 			{/* siteTitle specifies that the title will the siteTitle alone */}
-			<SEO title="siteTitle" />
+			<SEO title={site.siteMetadata.title} />
 			<Posts data={{}} />
 		</Layout>
 	)

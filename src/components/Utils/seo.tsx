@@ -60,6 +60,10 @@ function SEO({ description, lang, meta, title }) {
 					content: `website`,
 				},
 				{
+					name: `twitter:image`,
+					content: `https://brainbox.rory.bio/box.jpg`
+				},
+				{
 					name: `twitter:card`,
 					content: `summary`,
 				},

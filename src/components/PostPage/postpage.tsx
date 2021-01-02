@@ -7,12 +7,12 @@ import Layout from "../Layout/layout"
 import SEO from "../Utils/seo"
 import truncateText from "../Utils/truncateText"
 import dateInEnglish from "../Utils/dateInEnglish"
+import Subscribe from "../Subscribe/Subscribe";
 const shortcodes = { Link }
 
 import "./postpage.scss"
 
 export default function PostPage({ data: { mdx } }) {
-	console.log(mdx)
 	return (
 		<Layout>
 			<SEO

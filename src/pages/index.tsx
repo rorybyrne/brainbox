@@ -6,6 +6,7 @@ import Layout from "../components/Layout/layout"
 import SEO from "../components/Utils/seo"
 import Intro from "../components/Intro/intro"
 import Posts from "../components/Posts/posts"
+import Subscribe from "../components/Subscribe/Subscribe";
 
 export default function IndexPage(props) {
 	const { site } = useStaticQuery(

@@ -5,6 +5,7 @@ import Header from "../Header/header"
 import Footer from "../Footer/footer"
 import "./layout.scss"
 import "../../styles/globals.scss"
+import Subscribe from "../Subscribe/Subscribe";
 
 export default function Layout({ children }) {
 	const data = useStaticQuery(graphql`
@@ -27,6 +28,7 @@ export default function Layout({ children }) {
 					siteTitle={data.site.siteMetadata.title}
 				/>
 				<main className="Layout__children">{children}</main>
+				<Subscribe />
 				<Footer
 					className="Layout__footer"
 					siteTitle={data.site.siteMetadata.title}

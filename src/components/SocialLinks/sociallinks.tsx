@@ -1,24 +1,17 @@
 import React from "react"
-import PropTypes from "prop-types"
 import "./sociallinks.scss"
 
-import { FaGithub, FaTwitter, FaEnvelope } from "react-icons/fa"
-import { GrGatsbyjs } from "react-icons/gr"
+import {FaEnvelope, FaGithub, FaTwitter} from "react-icons/fa"
 
 // Edit these to add or remove social media icons.
 const socialMediaAccounts = [
-	{ id: 1, icon: FaGithub, url: "http://github.com/aaaakshat" },
-	{
-		id: 2,
-		icon: GrGatsbyjs,
-		url: "https://www.gatsbyjs.com/starters/aaaakshat/gatsby-starter-texblog/",
-	},
+	{ id: 1, icon: FaGithub, url: "http://github.com/synek" },
 	{
 		id: 3,
 		icon: FaTwitter,
-		url: "http://github.com/aaaakshat/gatsby-starter-texblog",
+		url: "https://twitter.com/ryrobyrne",
 	},
-	{ id: 4, icon: FaEnvelope, url: "mailto:hello@akshatbisht.com" },
+	{ id: 4, icon: FaEnvelope, url: "mailto:rory@rory.bio" },
 ]
 
 const SocialLinks = ({ className }) => (

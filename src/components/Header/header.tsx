@@ -27,9 +27,6 @@ const Header = props => (
 			<Link to="/all-posts" className="Header__menu__item">
 				Posts
 			</Link>
-			<Link to="/example-page" className="Header__menu__item">
-				Example Page
-			</Link>
 		</Menu>
 	</header>
 )

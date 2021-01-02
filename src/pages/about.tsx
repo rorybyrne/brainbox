@@ -10,40 +10,25 @@ export default function About(props) {
 			<section className="About">
 				<h1>About</h1>
 				<p>
-					Hello, I'm Akshat!
+                    Hi, I'm Rory!
 					<br />
 					<br />
-					This is a project I decided to work on as I had planned to publish
-					some typeset work on a blog and I realised that there weren't too many
-					Gatsby starters with a focus on LaTeX, so I decided to create TeXBlog:
-					my first Gatsby starter which is centered around the simplicity and
-					elegance of typesetting.
+					I'm doing a lot of study in my spare time, and so I want to start documenting some of that
+					progress here as a way to hold myself accountable and hopefully help any other learners who
+					are grappling with computational neuroscience concepts.
 					<br />
 					<br />
-					If you'd like to check out more of my projects please visit{" "}
-					<a
-						href="http://akshatbisht.com"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						my website
-					</a>{" "}
-					or if you'd like to get in touch{" "}
-					<a
-						href="mailto:hello@akshatbisht.com"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						click here for my email
-					</a>
+					The content on this website lies somewhere between "rough personal notes" and "publishable
+					material", and I expect a lot of it to be revised as I learn more.
 					<br />
 					<br />
-					Thank you very much and I hope you enjoy this starter!
+					If you'd like to get in touch with me, my twitter is @ryrobyrne
+					Thank you very much and I hope you can learn something from my writing!
 					<br />
 					<br />
 					<br />
 					<br />
-					- Akshat
+					- Rory
 				</p>
 			</section>
 		</Layout>

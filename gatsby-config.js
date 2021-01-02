@@ -1,16 +1,16 @@
 module.exports = {
 	siteMetadata: {
 		// Update these and enjoy :)
-		title: `TeXBlog`,
-		description: `A simple, LaTeX enabled starter to properly showcase your beautifully typeset articles. Perfectly complements STEM blogs.`,
-		author: `Akshat Bisht`,
+		title: `Brain Box`,
+		description: `Learning about the brain in public`,
+		author: `Rory Byrne`,
 	},
 	plugins: [
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
 				name: `gatsby-starter-texblog`,
-				short_name: `texblog`,
+				short_name: `Brain Box`,
 				start_url: `/`,
 				// Color settings can be found in /styles/colors.scss
 				background_color: `oldlace`,

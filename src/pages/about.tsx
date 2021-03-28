@@ -14,9 +14,8 @@ export default function About(props) {
 					<br />
 					<br />
                     I'm interested in improving the way that we use computation to build tools for thought. I work
-                        as a coder, and in my spare time I run some <a href="https://github.com/synek">open source </a>                        projects
-                        and study neuroscience.
-
+                        as a coder, and in my spare time I run some <a href="https://github.com/synek">open source</a>
+                        projects and study neuroscience.
                     <br />
                     <br />
 					I am trying to document my study progress here as a way to hold myself accountable and hopefully

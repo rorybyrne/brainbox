@@ -1,0 +1,59 @@
+---
+title: "git plan, a better commit workflow for git"
+date: "2021-03-28"
+description: "Git's default workflow is backwards and encourages bad habits"
+---
+
+Picture the scene, you're in the zone working on a new feature in your codebase when you spot a typo and fix it. Then,
+to facilitate the feature you're working on you decide to make a small architectural change elsewhere in the codebase.
+Finally, before finishing your session you decide to refactor some code in one of the files you were working on.
+
+Those kind of sessions are great, because you're in flow. And then it comes time to stage your changes and commit your
+work and it all comes crashing down. You've got changes in 12 files, and many of those changes aren't related to
+each other. What do you do?
+
+The "right" thing to do is to spend time un-tangling your changes, staging them in groups and committing with well
+thought-out commit messages. `git add --patch` can help here, but it's still tedious work. Alternatively, you could just
+`git add --all` and call it a day.
+
+Neither of those choices are good, but `git` doesn't give us much choice. In-fact, the natural way of using `git` seems
+to inevitably lead to this situation. There are two reasons why:
+
+1. Git doesn't allow you to write anything until you write your commit message - after you've already turned your
+thoughts into code changes anyway.
+2. If you context-switch during your coding session, git is not aware of it. In-fact, git isn't even a part of the
+picture until _after_ you've finished writing code.
+
+The end result is that being "in the zone" is punished by git.
+
+I recently build a tool called [git-plan](https://github.com/synek/git-plan) to tackle problem #1, by adding a new `git
+plan` command  to git. When you run `git plan`, you have the opportunity to plan your commit message in advance.
+Then, when you've staged some changes and you're ready to commit, simply run `git plan commit` and you can use your
+previously-written plan as a template for your commit message.
+
+An example usage might look something like:
+1. `git plan` -> opens `vim` to write a commit "plan"
+2. `git plan` -> write another plan, because you've probably got more work in-mind
+3. ...write a bunch of code
+4. `git add <files>` -> stage files for one of your planned commits
+5. `git plan commit` -> asks you to choose which "plan" you'd like to commit
+6. ...then opens `vim` with that plan as the template.
+7. ...make changes to the commit message if needed, then save.
+8. Your commit is saved.
+
+It's important to point out that this isn't a magic pill - you can still end up with too many unrelated changes in step
+4 that you have to untangle. This tool just makes it possible to use git in a new way, which can lead to better habits
+if you put in the effort to write [preemptive commit messages](https://arialdomartini.wordpress.com/2012/09/03/pre-emptive-commit-comments/).
+
+That being said, I do think that a magic pill _is_ possible. This is where problem #1 comes into play: when you
+context-switch while writing code, your tools *do not* switch with you...but they should. If your tools "know" what your
+planned work is, there is no reason why they cannot, in principle, keep up with you as you switch from building a
+feature in file A to fixing a bug in file B.
+
+That is the future work for `git plan` - to build a git workflow where staging your changes manually is not required,
+because your tools can keep up with you.
+
+If any readers are interested in contributing to the magic pill, I'm happy to take contributions for
+[git-plan](https://github.com/synek/git-plan).
+
+Rory.

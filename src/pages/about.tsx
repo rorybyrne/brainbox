@@ -13,13 +13,18 @@ export default function About(props) {
                     Hi, I'm Rory!
 					<br />
 					<br />
-					I'm doing a lot of study in my spare time, and so I want to start documenting some of that
-					progress here as a way to hold myself accountable and hopefully help any other learners who
-					are grappling with computational neuroscience concepts.
+                    I'm interested in improving the way that we use computation to build tools for thought. I work
+                        as a coder, and in my spare time I run some <a href="https://github.com/synek">open source </a>                        projects
+                        and study neuroscience.
+
+                    <br />
+                    <br />
+					I am trying to document my study progress here as a way to hold myself accountable and hopefully
+                        help any other learners who are grappling with computational neuroscience concepts.
 					<br />
 					<br />
 					The content on this website lies somewhere between "rough personal notes" and "publishable
-					material", and I expect a lot of it to be revised as I learn more.
+					    material", and I expect a lot of it to be revised as I learn more.
 					<br />
 					<br />
 					If you'd like to get in touch with me, my twitter is @ryrobyrne

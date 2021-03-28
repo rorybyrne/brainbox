@@ -1,8 +1,8 @@
 module.exports = {
 	siteMetadata: {
 		// Update these and enjoy :)
-		title: `Brain Box`,
-		description: `Learning about the brain in public`,
+		title: `Rory.`,
+		description: `Writing about software, learning about the brain`,
 		author: `Rory Byrne`,
 	},
 	plugins: [
@@ -10,7 +10,7 @@ module.exports = {
 			resolve: `gatsby-plugin-manifest`,
 			options: {
 				name: `gatsby-starter-texblog`,
-				short_name: `Brain Box`,
+				short_name: `Ryro`,
 				start_url: `/`,
 				// Color settings can be found in /styles/colors.scss
 				background_color: `oldlace`,

@@ -1,7 +1,7 @@
 ---
-title: "git's code->stage->commit workflow is backwards"
+title: "git's commit workflow is backwards, and encourages bad habits"
 date: "2021-03-28"
-description: "Introducing a new tool that allows you to write preemptive commit messages"
+description: "git-plan, a git extension that allows you to write preemptive commit messages"
 ---
 
 Picture the scene, you're in the zone working on a new feature in your codebase when you spot a typo and fix it. Then,
@@ -19,15 +19,16 @@ thought-out commit messages. `git add --patch` can help here, but it's still ted
 Neither of those choices are good, but git doesn't give us much choice. In-fact, the natural way of using `git` seems
 to inevitably lead to this situation. Here's why:
 
-1. Git doesn't allow you to write anything until you write your commit message - after you've already turned your
+1. Git forces you to write your commit message at the end of your coding session - after you've already turned your
 thoughts into code anyway.
 2. If you context-switch during your coding session, git is not aware of it. In-fact, git isn't even a part of the
 picture until _after_ you've finished writing code.
 
-The end result is that being "in the zone" is punished by git, and it leads to frustration and messy commits.
+Ultimately, being "in the zone" is punished by git, because you are forced to write a description of your work after you
+have already completed it. That workflow is backawrds, and git should instead allow [preemptive commit messages](https://arialdomartini.wordpress.com/2012/09/03/pre-emptive-commit-comments/).
 
-I recently built a tool called [git-plan](https://github.com/synek/git-plan) to tackle problem #1, by adding a new `git
-plan` command  to git. When you run `git plan`, you have the opportunity to plan your commit message in advance.
+I recently built a tool called [git-plan](https://github.com/synek/git-plan) which tries to make this possible, by adding a new
+`plan` command  to git. When you run `git plan`, you have the opportunity to write your commit message in advance.
 Then, when you've staged some changes and you're ready to commit, simply run `git plan commit` and you can use your
 previously-written plan as a template for your commit message.
 
@@ -41,9 +42,9 @@ An example usage might look something like:
 7. ...make changes to the commit message if needed, then save.
 8. Your commit is saved.
 
-It's important to point out that this isn't a magic pill - you can still end up with too many unrelated changes in step
+It's important to say that this isn't a magic pill - you can still end up with too many unrelated changes in step
 4 that you have to untangle. This tool just makes it possible to use git in a new way, which can lead to better habits
-if you put in the effort to write [preemptive commit messages](https://arialdomartini.wordpress.com/2012/09/03/pre-emptive-commit-comments/).
+if you put in the effort.
 
 That being said, I do think that a magic pill _is_ possible. This is where problem #1 comes into play: when you
 context-switch while writing code, your tools *do not* switch with you...but they should. If your tools "know" what your

@@ -1,6 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
+import "@fontsource/open-sans" // Defaults to weight 400.
+import "@fontsource/roboto" // Defaults to weight 400.
 import Header from "../Header/header"
 import Footer from "../Footer/footer"
 import "./layout.scss"

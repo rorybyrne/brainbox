@@ -14,7 +14,7 @@ body,
 body {
 	width: 100%;
 	margin: 0 auto;
-	font-family: $serif-stack;
+	font-family: $sans-serif-stack;
 	font-size: 16px;
 	line-height: 1.5;
 	color: $text-black;
@@ -80,14 +80,6 @@ h6 {
 	font-size: 1.05em;
 	font-weight: 400;
 	color: $grey-700;
-}
-
-body {
-	margin: 0;
-	font-family: $serif-stack;
-	font-size: 105%;
-	font-weight: 500;
-	color: $text-black;
 }
 
 a {
@@ -226,4 +218,3 @@ code {
 	padding: 8px 16px;
 	color: white;
 }
-

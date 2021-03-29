@@ -3,7 +3,7 @@ import './subscribe.scss'
 
 const Subscribe = () => (
     <form
-        style={{border: '1px solid #ccc', borderRadius: '12ox', padding: '12px 40px', marginBottom: '40px', 'textAlign': 'center' }}
+        style={{border: '1px solid #ccc', borderRadius: '12ox', padding: '20px 40px', backgroundColor: '#fff2da', marginBottom: '40px', 'textAlign': 'center' }}
         action="https://tinyletter.com/ryro"
         method="post" target="popupwindow"
         onSubmit={() => {
@@ -12,7 +12,7 @@ const Subscribe = () => (
         }}
     >
         <p>
-            <label htmlFor="tlemail">Subscribe for weekly learnings and ideas</label>
+            <label htmlFor="tlemail">Subscribe for bi-weekly learnings and ideas</label>
         </p>
         <p>
             <input className='inputbox' type="text" style={{ width: '140px' }} name="email" id="tlemail"/>

@@ -1368,6 +1368,16 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.2.5.tgz#8eed982e2ee6f7f4e44c253e12962980791efd46"
   integrity sha512-6U71C2Wp7r5XtFtQzYrW5iKFT67OixrSxjI4MptCHzdSVlgabczzqLe0ZSgnub/5Kp4hSbpDB1tMytZY9pwxxA==
 
+"@fontsource/open-sans@^4.2.2":
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/@fontsource/open-sans/-/open-sans-4.2.2.tgz#59046f772136a44c5999e0189d33c6a26676630c"
+  integrity sha512-NbsL1a9asJO6N/5kRxYPCy0kNhKMi9T75kl4QfIGtmpd/5IfB+UIAUxd9AICmCLaH4Osc2TImeTJj94xc9MNKg==
+
+"@fontsource/roboto@^4.2.2":
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/@fontsource/roboto/-/roboto-4.2.2.tgz#39b87680b25915539e445cc6e0fac99e1a81f58b"
+  integrity sha512-VzYWCdqjrepaT7dezuaTZXKaW1L+f5FSp7DGxMqTrf81OTzh9xpKIpr8lgjPg2ZNwiT8rnU++mJ4hojsCnOoqw==
+
 "@graphql-tools/schema@^6.0.14":
   version "6.0.15"
   resolved "https://registry.yarnpkg.com/@graphql-tools/schema/-/schema-6.0.15.tgz#b016f9f36820342982887a291baa7e7d11b039ae"

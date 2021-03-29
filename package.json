@@ -5,6 +5,8 @@
   "version": "0.1.0",
   "author": "Akshat Bisht <hello@akshatbisht.com>",
   "dependencies": {
+    "@fontsource/open-sans": "^4.2.2",
+    "@fontsource/roboto": "^4.2.2",
     "@mdx-js/mdx": "^1.6.16",
     "@mdx-js/react": "^1.6.16",
     "gatsby": "^2.23.12",

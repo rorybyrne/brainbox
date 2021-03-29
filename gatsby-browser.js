@@ -11,22 +11,6 @@ import { MDXProvider } from "@mdx-js/react"
 import Highlight, { defaultProps } from "prism-react-renderer"
 import github from "prism-react-renderer/themes/github"
 
-const loadExternalStyles = url => {
-	const styles = document.createElement("link")
-	styles.rel = "stylesheet"
-	styles.href = url
-	styles.type = "text/css"
-	document.head.appendChild(styles)
-}
-
-export const onClientEntry = () => {
-	window.onload = () => {
-		loadExternalStyles(
-			// Load cm-webfonts
-			"https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css"
-		)
-	}
-}
 
 // Credits: https://github.com/kunalJa/gatsby-starter-math-blog
 const component = {

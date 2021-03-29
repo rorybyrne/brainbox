@@ -33,14 +33,16 @@ Then, when you've staged some changes and you're ready to commit, simply run `gi
 previously-written plan as a template for your commit message.
 
 An example usage might look something like:
-1. `git plan` -> opens `vim` to write a commit "plan"
-2. `git plan` -> write another plan, because you've probably got more work in-mind
-3. ...write a bunch of code
-4. `git add <files>` -> stage files for one of your planned commits
-5. `git plan commit` -> asks you to choose which "plan" you'd like to commit
+1. `git plan add` -> open vim to draft the commit message for your current task
+1. ...start writing code, then notice a method that needs to be refactored/bug to be fixed.
+2. `git plan add` -> opens vim, so you can draft a commit message for the new task
+3. ...continue working on your original task, without needing to context switch
+4. `git add --all` -> stage files for your task
+5. `git plan commit` -> asks you to choose a plan, so you choose the current task's plan
 6. ...then opens `vim` with that plan as the template.
 7. ...make changes to the commit message if needed, then save.
-8. Your commit is saved.
+8. `git plan list` -> see the other commits you have planned
+9. ...start working on the second task
 
 It's important to say that this isn't a magic pill - you can still end up with too many unrelated changes in step
 4 that you have to untangle. This tool just makes it possible to use git in a new way, which can lead to better habits

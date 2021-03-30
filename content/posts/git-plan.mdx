@@ -1,5 +1,5 @@
 ---
-title: "git's commit workflow is backwards, and encourages bad habits"
+title: "Is there a better git workflow for context switching?"
 date: "2021-03-28"
 description: "git-plan, a git extension that allows you to write preemptive commit messages"
 ---
@@ -19,13 +19,14 @@ thought-out commit messages. `git add --patch` can help here, but it's still ted
 Neither of those choices are good, but git doesn't give us much choice. In-fact, the natural way of using `git` seems
 to inevitably lead to this situation. Here's why:
 
-1. Git forces you to write your commit message at the end of your coding session - after you've already turned your
+1. Git expects you to write your commit message at the end of your coding session - after you've already turned your
 thoughts into code anyway.
 2. If you context-switch during your coding session, git is not aware of it. In-fact, git isn't even a part of the
 picture until _after_ you've finished writing code.
 
-Ultimately, being "in the zone" is punished by git, because you are forced to write a description of your work after you
-have already completed it. That workflow is backwards, and git should instead allow [preemptive commit messages](https://arialdomartini.wordpress.com/2012/09/03/pre-emptive-commit-comments/).
+Ultimately, git expects you to plan your context-switching yourself, with no opportunity to write down your thoughts
+until you commit your work. That workflow is not very flexible: git should instead allow
+[preemptive/draft commit messages](https://arialdomartini.wordpress.com/2012/09/03/pre-emptive-commit-comments/).
 
 I recently built a tool called [git-plan](https://github.com/synek/git-plan) which tries to make this possible, by adding a new
 `plan` command  to git. When you run `git plan`, you have the opportunity to write your commit message in advance.
@@ -58,5 +59,9 @@ because your tools can keep up with you.
 
 If any readers are interested in contributing to the magic pill, I'm happy to take contributions for
 [git-plan](https://github.com/synek/git-plan).
+
+Update 30/03/2021:
+
+I decided to make the title less inflammatory, and change the tone in some places to be less critical of git.
 
 Rory.
